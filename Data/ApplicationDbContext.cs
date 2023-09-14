@@ -12,5 +12,6 @@ namespace Edoc.Data
         }
         public DbSet<Edoc.Models.Specialization>? Specialization { get; set; }
         public DbSet<Edoc.Models.Doctor>? Doctor { get; set; }
+        public DbSet<Edoc.Models.Patient>? Patient { get; set; }
     }
 }
