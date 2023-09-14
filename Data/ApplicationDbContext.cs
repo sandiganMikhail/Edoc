@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Edoc.Models;
 
 namespace Edoc.Data
 {
@@ -9,5 +10,7 @@ namespace Edoc.Data
             : base(options)
         {
         }
+        public DbSet<Edoc.Models.Specialization>? Specialization { get; set; }
+        public DbSet<Edoc.Models.Doctor>? Doctor { get; set; }
     }
 }
